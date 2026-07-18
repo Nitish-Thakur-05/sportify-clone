@@ -11,9 +11,9 @@ const AppContext = createContext();
 
 export const useApp = () => useContext(AppContext);
 
-// Configure axios default base URL (Vite proxies /api to http://localhost:3000)
+// Configure axios default base URL
 const api = axios.create({
-  baseURL: "",
+  baseURL: "https://sportify-clone.onrender.com",
   withCredentials: true, // Send cookies in cross-origin / dev proxy environments
 });
 
