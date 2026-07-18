@@ -13,7 +13,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://sportify-clone-chi-sable.vercel.app/",
+      "https://sportify-clone-chi-sable.vercel.app",
     ],
     credentials: true,
   }),
