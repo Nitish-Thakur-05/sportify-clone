@@ -307,7 +307,7 @@ export const AppProvider = ({ children }) => {
       const response = await api.delete(`/api/music/delete/${songId}`);
       // Update global songs state by filtering out the deleted song
       setSongs((prev) => prev.filter((s) => s._id !== songId));
-      
+
       // If currently playing song is the deleted one, stop playback
       if (currentSong && currentSong._id === songId) {
         setCurrentSong(null);
